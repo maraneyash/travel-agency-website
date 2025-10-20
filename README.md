@@ -5,7 +5,10 @@ A modern, responsive travel agency website built with HTML, CSS, and Bootstrap 5
 ## 🌟 Features
 
 ### Pages
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - **Home** - Modern hero section with search functionality, featured destinations, tour packages, and special offers
 - **About Us** - Company information, mission & vision, team details, and why choose us section
 - **Destinations** - Comprehensive list of domestic and international travel destinations
@@ -17,7 +20,10 @@ A modern, responsive travel agency website built with HTML, CSS, and Bootstrap 5
 - **Login/Register** - User authentication pages with social login options
 
 ### Design Features
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - 🎨 Modern flat UI design with clean aesthetics
 - 📱 Fully responsive layout (mobile, tablet, desktop)
 - 🎭 Smooth transitions and hover effects
@@ -28,7 +34,10 @@ A modern, responsive travel agency website built with HTML, CSS, and Bootstrap 5
 - 🗺️ Integrated map for location display
 
 ### Technical Features
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Bootstrap 5.3.8 framework
 - Bootstrap Icons v1.13.1
 - Custom CSS with modern design patterns
@@ -81,7 +90,10 @@ Travel Agency Website/
 ## 🚀 Getting Started
 
 ### Prerequisites
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - Text editor or IDE (VS Code, Sublime Text, etc.)
 - Basic knowledge of HTML, CSS, and Bootstrap
@@ -91,7 +103,10 @@ Travel Agency Website/
 1. **Clone or Download** the project files to your local machine
 
 2. **Navigate** to the project directory:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
    ```
    cd "Travel Agency Website"
    ```
@@ -104,7 +119,10 @@ Travel Agency Website/
 ### Using Live Server (Recommended)
 
 If you're using VS Code:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 1. Install the "Live Server" extension
 2. Right-click on `index.html`
 3. Select "Open with Live Server"
@@ -113,14 +131,20 @@ If you're using VS Code:
 ## 💻 Usage
 
 ### Navigation
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Use the top navigation bar to access different sections
 - Click on the **NextStop** logo to return to the home page
 - Use the search bar to search for destinations
 - Access additional pages through the "More" dropdown menu
 
 ### Booking Process
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 1. Browse **Destinations** or **Tours** pages
 2. Select your preferred package
 3. Click on "Book Now" button
@@ -129,7 +153,10 @@ If you're using VS Code:
 6. Submit your booking
 
 ### User Account
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - **Login**: Existing users can log in via the Login page
 - **Register**: New users can create an account on the Register page
 - Social login options available (Google, Facebook)
@@ -137,28 +164,40 @@ If you're using VS Code:
 ## 🎯 Key Components
 
 ### Hero Section
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Full-width background images
 - Search functionality
 - Call-to-action buttons
 - Statistics display
 
 ### Cards
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Destination cards with images and descriptions
 - Tour package cards with pricing
 - Deal cards with discount badges
 - Review cards with ratings
 
 ### Forms
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Booking form with multiple sections
 - Contact form with validation
 - Login/Register forms
 - Newsletter subscription
 
 ### Interactive Elements
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Hover effects on cards and buttons
 - Dropdown menus
 - Accordion FAQ sections
@@ -168,9 +207,13 @@ If you're using VS Code:
 ## 🛠️ Customization
 
 ### Changing Colors
+<<<<<<< HEAD
 
 Edit the CSS variables in `assets/css/style.css`:
 
+=======
+Edit the CSS variables in `assets/css/style.css`:
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 ```css
 /* Primary color (Teal) */
 background: #2d545e;
@@ -180,14 +223,20 @@ background: #e1b382;
 ```
 
 ### Adding New Pages
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 1. Create a new HTML file in the root directory
 2. Copy the navigation and footer from existing pages
 3. Add your content in between
 4. Update navigation links in all pages
 
 ### Modifying Content
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - Text content is directly in HTML files
 - Images are stored in `assets/images/`
 - Styles are in `assets/css/style.css`
@@ -195,7 +244,10 @@ background: #e1b382;
 ## 📱 Responsive Design
 
 The website is fully responsive with breakpoints:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - **Desktop**: 1200px and above
 - **Tablet**: 768px - 1199px
 - **Mobile**: Below 768px
@@ -211,6 +263,7 @@ The website is fully responsive with breakpoints:
 ## 📝 Pages Overview
 
 ### Home (`index.html`)
+<<<<<<< HEAD
 
 Modern landing page with hero section, featured destinations, popular tours, and special offers.
 
@@ -248,12 +301,44 @@ User authentication with email/password and social login options.
 
 ### Register (`register.html`)
 
+=======
+Modern landing page with hero section, featured destinations, popular tours, and special offers.
+
+### About Us (`about.html`)
+Company introduction, statistics, mission & vision statements, and why choose us section.
+
+### Destinations (`destinations.html`)
+Comprehensive listing of domestic and international travel destinations with images and descriptions.
+
+### Tours (`tours.html`)
+Available tour packages categorized by type (domestic/international) with pricing and details.
+
+### Deals (`deals.html`)
+Special offers including flash deals, seasonal packages, and limited-time discounts.
+
+### Testimonials (`testimonials.html`)
+Customer reviews, ratings, photo gallery, and feedback submission form.
+
+### Contact (`contact.html`)
+Contact form, company information, location map, social media links, and FAQ section.
+
+### Booking (`booking.html`)
+Complete booking form with traveler details, tour selection, payment options, and summary.
+
+### Login (`login.html`)
+User authentication with email/password and social login options.
+
+### Register (`register.html`)
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 New user registration form with terms and conditions acceptance.
 
 ## 🎓 Learning Outcomes
 
 This project demonstrates:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - HTML5 semantic structure
 - CSS3 modern styling techniques
 - Bootstrap 5 framework implementation
@@ -268,7 +353,10 @@ This project demonstrates:
 ## 🔧 Future Enhancements
 
 Potential features to add:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 - [ ] Backend integration for booking system
 - [ ] Database for storing user data
 - [ ] Payment gateway integration
@@ -286,10 +374,13 @@ Potential features to add:
 
 This project is created for educational purposes.
 
+<<<<<<< HEAD
 ## 👨‍💻 Author
 
 **IT Vedant**
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 ## 🙏 Acknowledgments
 
 - Bootstrap team for the excellent framework
@@ -297,12 +388,19 @@ This project is created for educational purposes.
 - Unsplash for placeholder images (if used)
 - Font Awesome community for design inspiration
 
+<<<<<<< HEAD
 ## 📞 Support
 
 For any questions or issues, please contact through the website's contact form or reach out directly.
 
+=======
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
 ---
 
 **Happy Traveling! ✈️🌍**
 
+<<<<<<< HEAD
 _NextStop - Your Gateway to Unforgettable Travel Experiences_
+=======
+*NextStop - Your Gateway to Unforgettable Travel Experiences*
+>>>>>>> 9aaad2654373139bc75c377a6dc1cb260c96e996
