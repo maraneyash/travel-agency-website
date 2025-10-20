@@ -85,8 +85,7 @@
                         </div>
                         <div class="card-body">
                             <!-- Tour Image -->
-                            <img src="assets/images/goa.jfif"
-                                class="img-fluid rounded mb-3" alt="Tour Package">
+                            <img src="assets/images/goa.jfif" class="img-fluid rounded mb-3" alt="Tour Package">
 
                             <!-- Tour Details -->
                             <h5 class="tour-name mb-3">Goa Beach Paradise</h5>
@@ -150,7 +149,8 @@
                         <div class="card-body p-4">
                             <h2 class="text-center mb-4 custom-head">Booking Details</h2>
 
-                            <form class="needs-validation" novalidate id="bookingForm">
+                            <form class="needs-validation" action="payment.html" method="GET" novalidate
+                                id="bookingForm">
 
                                 <!-- Travel Information Section -->
                                 <div class="form-section mb-4">
@@ -356,10 +356,10 @@
                                     <button type="submit" class="btn btn-custom-1 btn-lg">
                                         Confirm Booking & Proceed to Payment
                                     </button>
-                                    <button type="button" class="btn btn-outline-secondary"
-                                        onclick="window.history.back()">
+
+                                    <a href="tours.html" class="btn btn-outline-secondary">
                                         <i class="bi bi-arrow-left"></i> Back to Tours
-                                    </button>
+                                    </a>
                                 </div>
                             </form>
                         </div>

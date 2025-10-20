@@ -2138,4 +2138,296 @@ img {
     line-height: 1.2;
 }
 
+/* PAYMENT SUCCESS PAGE */
+.payment-confirmation-container {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.success-icon i {
+    font-size: 5rem;
+    color: #28a745;
+}
+
+.payment-success-title {
+    color: #2d545e;
+    font-weight: bold;
+}
+
+.payment-success-text {
+    color: #666;
+}
+
+.transaction-details-alert {
+    background-color: #d4edda;
+}
+
+.transaction-label {
+    color: #2d545e;
+}
+
+.transaction-value {
+    color: #666;
+}
+
+.booking-summary-section {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.summary-heading {
+    color: #2d545e;
+    font-weight: bold;
+}
+
+.summary-icon {
+    color: #e1b382;
+}
+
+.summary-label {
+    color: #2d545e;
+}
+
+.summary-value {
+    color: #666;
+}
+
+.summary-divider {
+    border-top: 2px solid #e1b382;
+}
+
+.total-amount-label {
+    color: #2d545e;
+    font-weight: bold;
+}
+
+.next-steps-heading {
+    color: #2d545e;
+    font-weight: bold;
+}
+
+.next-steps-list {
+    color: #666;
+}
+
+.next-steps-list i {
+    color: #28a745;
+}
+
+.contact-support-text {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.support-link {
+    color: #2d545e;
+    text-decoration: none;
+}
+
+.support-link:hover {
+    color: #1a3740;
+    text-decoration: underline;
+}
+
+.security-heading {
+    color: #2d545e;
+    font-weight: bold;
+}
+
+.security-text {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.border-divider {
+    border-top: 1px solid #ddd;
+}
+
+/* PAYMENT GATEWAY PAGE */
+.payment-gateway-container {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.payment-lock-icon {
+    font-size: 4rem;
+    color: #2d545e;
+    margin-bottom: 15px;
+}
+
+.payment-page-title {
+    color: #2d545e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.payment-page-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.payment-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.payment-booking-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.payment-section-title {
+    color: #2d545e;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.payment-info-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.payment-info-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.payment-info-value {
+    color: #2d545e;
+    font-weight: 600;
+}
+
+.payment-divider {
+    border-top: 2px solid #e1b382;
+    margin: 15px 0;
+}
+
+.payment-total-label {
+    color: #2d545e;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.payment-total-amount {
+    color: #2d545e;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.payment-form-label {
+    color: #2d545e;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.payment-form-label i {
+    color: #e1b382;
+}
+
+.payment-input {
+    border: 2px solid #ddd !important;
+    border-radius: 10px !important;
+    padding: 12px 15px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: none !important;
+}
+
+.payment-input:focus {
+    border-color: #2d545e !important;
+    box-shadow: 0 0 0 0.2rem rgba(45, 84, 94, 0.1) !important;
+}
+
+.payment-input:hover {
+    border-color: #e1b382 !important;
+}
+
+.payment-card-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-card-logo {
+    font-size: 1.5rem;
+    color: #2d545e;
+}
+
+.payment-card-text {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.payment-cvv-help {
+    color: #666;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+}
+
+.payment-email-help {
+    color: #666;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+}
+
+.payment-terms-check {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.payment-terms-label {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.payment-terms-link {
+    color: #2d545e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.payment-terms-link:hover {
+    color: #e1b382;
+    text-decoration: underline;
+}
+
+.payment-submit-btn {
+    font-size: 1.2rem;
+    padding: 15px 30px !important;
+}
+
+.payment-back-btn {
+    padding: 12px 30px;
+    border: 2px solid #ddd;
+    color: #666;
+    font-weight: 600;
+}
+
+.payment-back-btn:hover {
+    background: #f8f9fa;
+    border-color: #2d545e;
+    color: #2d545e;
+}
+
+.payment-support-text {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.payment-support-link {
+    color: #2d545e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.payment-support-link:hover {
+    color: #e1b382;
+    text-decoration: underline;
+}
+
 /* END */

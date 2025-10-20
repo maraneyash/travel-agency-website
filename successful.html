@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR START -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand m-2" href="index.html">NextStop</a>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for your NextStop"
+                    aria-label="Search" />
+                <button class="btn btn-custom" type="submit">Search</button>
+            </form>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="deals.html">Deals</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION BAR END -->
+
+    <!-- PAYMENT CONFIRMATION SECTION START -->
+    <div class="container payment-confirmation-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Success Card -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body text-center p-5">
+                        <!-- Success Icon -->
+                        <div class="success-icon mb-4">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+
+                        <!-- Success Message -->
+                        <h1 class="mb-3 payment-success-title">Payment Successful!</h1>
+                        <p class="lead mb-4 payment-success-text">
+                            Thank you for your booking. Your payment has been processed successfully.
+                        </p>
+
+                        <!-- Transaction Details -->
+                        <div class="alert alert-success border-0 mb-4 transaction-details-alert">
+                            <div class="row">
+                                <div class="col-md-6 text-start mb-2">
+                                    <strong class="transaction-label">Transaction ID:</strong><br>
+                                    <span class="transaction-value">#TXN2025102001234</span>
+                                </div>
+                                <div class="col-md-6 text-start mb-2">
+                                    <strong class="transaction-label">Payment Date:</strong><br>
+                                    <span class="transaction-value">October 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Booking Summary -->
+                        <div class="text-start mb-4">
+                            <h4 class="mb-3 summary-heading">
+                                <i class="bi bi-receipt me-2 summary-icon"></i>Booking Summary
+                            </h4>
+                            <div class="card booking-summary-section">
+                                <div class="card-body">
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <strong class="summary-label">Tour Package:</strong>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="summary-value">Goa Beach Paradise</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <strong class="summary-label">Destination:</strong>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="summary-value">Goa, India</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <strong class="summary-label">Duration:</strong>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="summary-value">4 Days / 3 Nights</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <strong class="summary-label">Number of Travelers:</strong>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="summary-value">1 Adult</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <strong class="summary-label">Base Price (per person):</strong>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="summary-value">₹15,999</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <strong class="summary-label">Tax & Service Charges:</strong>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="summary-value">₹1,600</span>
+                                        </div>
+                                    </div>
+                                    <hr class="summary-divider">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="total-amount-label">Total Amount Paid:</h5>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <h5 class="total-amount-label">₹17,599</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next Steps -->
+                        <div class="text-start mb-4">
+                            <h5 class="mb-3 next-steps-heading">
+                                <i class="bi bi-info-circle me-2 summary-icon"></i>What Happens Next?
+                            </h5>
+                            <ul class="list-unstyled next-steps-list">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    A confirmation email has been sent to your registered email address
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Your booking voucher and travel documents will be sent within 24 hours
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Our travel consultant will contact you within 2 business days
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    You can track your booking status in your account dashboard
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-3 d-md-flex justify-content-md-center mt-4">
+                            <a href="index.html" class="btn btn-custom-1 btn-lg px-4">Back to Home</a>
+                            <button class="btn btn-custom-1 btn-lg px-4">Print Receipt</button>
+                        </div>
+
+                        <!-- Contact Support -->
+                        <div class="mt-4 pt-4 border-divider">
+                            <p class="contact-support-text">
+                                Need help? Contact our support team
+                            </p>
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <a class="support-link">
+                                    <i class="bi bi-telephone-fill me-1"></i>+91 1234567890
+                                </a>
+                                <a class="support-link">
+                                    <i class="bi bi-envelope-fill me-1"></i>support@nextstop.com
+                                </a>
+                                <a class="support-link">
+                                    <i class="bi bi-chat-dots-fill me-1"></i>Live Chat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information Card -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="mb-3 security-heading">
+                            <i class="bi bi-shield-check me-2 summary-icon"></i>Your Booking is Secure
+                        </h5>
+                        <p class="security-text">
+                            Your payment information is encrypted and secure. We use industry-standard security measures
+                            to protect your personal and financial data. You can travel with confidence knowing that
+                            your booking is confirmed and protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PAYMENT CONFIRMATION SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer class="text-white text-center text-lg-start footer-custom">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">NextStop Travel Agency</h5>
+                    <p>Your gateway to unforgettable travel experiences. Explore the world with us!</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-white quick-link">Home</a></li>
+                        <li><a href="about.html" class="text-white quick-link">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white quick-link">Destinations</a></li>
+                        <li><a href="tours.html" class="text-white quick-link">Tours</a></li>
+                        <li><a href="deals.html" class="text-white quick-link">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123, XYZ Road, ABC City</li>
+                        <li><i class="bi bi-phone-fill"></i> +91 1234567890</li>
+                        <li><i class="bi bi-envelope-fill"></i> user@email.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 NextStop Travel Agency. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
