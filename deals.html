@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exciting Deals</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand m-2" href="index.html">NextStop</a>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for your NextStop"
+                    aria-label="Search" />
+                <button class="btn btn-outline-light btn-custom" type="submit">Search</button>
+            </form>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links aligned to right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="deals.html">Deals</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- navbar tabs end -->
+            </div> <!-- right navbar end -->
+        </div> <!-- container end -->
+    </nav>
+    <!-- nav bar ends -->
+
+    <!-- Deals Hero Section -->
+    <section class="deals-hero text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Exclusive Travel Deals</h1>
+            <p class="lead">Unbeatable prices on your dream destinations. Limited time offers!</p>
+        </div>
+    </section>
+
+    <!-- Featured Deal of the Day -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge bg-primary">DEAL OF THE DAY</span>
+                <h2>Today's Best Offer</h2>
+                <p>Don't miss this incredible limited-time deal</p>
+            </div>
+
+            <div class="deal-of-day-card">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="assets/images/maldives.jfif"
+                            class="img-fluid deal-day-img" alt="Maldives Deal">
+                        <div class="deal-badge-mega">
+                            <div class="discount-percent">60% OFF</div>
+                            <div class="time-left">24 Hours Only!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="deal-day-content p-5">
+                            <h3 class="mb-3 fw-bold">Maldives Luxury Escape</h3>
+                            <p class="text-muted mb-4">
+                                <i class="bi bi-geo-alt-fill text-primary"></i> Maldives · 5 Days / 4 Nights
+                            </p>
+                            <p class="mb-4">
+                                Experience paradise with overwater villas, spa treatments, water sports, and gourmet
+                                dining.
+                                All-inclusive luxury at an unbeatable price!
+                            </p>
+
+                            <div class="deal-features mb-4">
+                                <div class="row">
+                                    <div class="col-6 mb-2">
+                                        <i class="bi bi-check-circle-fill text-success"></i> 5-Star Resort
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <i class="bi bi-check-circle-fill text-success"></i> All Meals Included
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <i class="bi bi-check-circle-fill text-success"></i> Airport Transfers
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <i class="bi bi-check-circle-fill text-success"></i> Spa & Activities
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pricing-section mb-4">
+                                <div class="old-price">₹3,15,000</div>
+                                <div class="new-price">₹1,25,000 <span class="per-person">per person</span></div>
+                                <div class="savings-badge">You Save: ₹1,90,000!</div>
+                            </div>
+
+                            <a href="booking.html" class="btn btn-custom-1 btn-lg w-100">Book This Deal Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Deals Section -->
+    <section class="py-5" id="flash-deals">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge bg-primary">FLASH DEALS</span>
+                <h2>Lightning Deals</h2>
+                <p>Hurry! These deals won't last long</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Flash Deal 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card deal-card shadow">
+                        <div class="deal-ribbon">LIMITED TIME</div>
+                        <img src="assets/images/thailand.avif"
+                            class="card-img-top" alt="Thailand">
+                        <div class="card-body">
+                            <h5 class="card-title">Thailand Adventure</h5>
+                            <p class="text-muted mb-2">
+                                <i class="bi bi-geo-alt"></i> Bangkok & Pattaya · 6D/5N
+                            </p>
+                            <p class="card-text">Explore temples, beaches, and vibrant nightlife with guided tours.</p>
+
+                            <div class="price-comparison mb-3">
+                                <span class="original-price">₹52,999</span>
+                                <span class="discounted-price">₹32,999</span>
+                                <span class="discount-badge">38% OFF</span>
+                            </div>
+
+                            <div class="deal-timer mb-3">
+                                <i class="bi bi-clock-fill text-danger"></i> Ends in: <strong>18:45:30</strong>
+                            </div>
+
+                            <a href="booking.html" class="btn btn-custom-1 w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flash Deal 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card deal-card shadow">
+                        <div class="deal-ribbon">HOT DEAL</div>
+                        <img src="assets/images/dubai.jpg"
+                            class="card-img-top" alt="Dubai">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubai Extravaganza</h5>
+                            <p class="text-muted mb-2">
+                                <i class="bi bi-geo-alt"></i> Dubai, UAE · 5D/4N
+                            </p>
+                            <p class="card-text">Burj Khalifa, Desert Safari, and shopping at Dubai Mall included.</p>
+
+                            <div class="price-comparison mb-3">
+                                <span class="original-price">₹89,999</span>
+                                <span class="discounted-price">₹54,999</span>
+                                <span class="discount-badge">39% OFF</span>
+                            </div>
+
+                            <div class="deal-timer mb-3">
+                                <i class="bi bi-clock-fill text-danger"></i> Ends in: <strong>12:30:15</strong>
+                            </div>
+
+                            <a href="booking.html" class="btn btn-custom-1 w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flash Deal 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card deal-card shadow">
+                        <div class="deal-ribbon">BEST SELLER</div>
+                        <img src="assets/images/paris"
+                            class="card-img-top" alt="Paris">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris Romantic Getaway</h5>
+                            <p class="text-muted mb-2">
+                                <i class="bi bi-geo-alt"></i> Paris, France · 6D/5N
+                            </p>
+                            <p class="card-text">Eiffel Tower, Louvre Museum, and Seine River cruise experience.</p>
+
+                            <div class="price-comparison mb-3">
+                                <span class="original-price">₹1,35,999</span>
+                                <span class="discounted-price">₹79,999</span>
+                                <span class="discount-badge">41% OFF</span>
+                            </div>
+
+                            <div class="deal-timer mb-3">
+                                <i class="bi bi-clock-fill text-danger"></i> Ends in: <strong>20:15:45</strong>
+                            </div>
+
+                            <a href="booking.html" class="btn btn-custom-1 w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Offers Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge bg-primary">SEASONAL SPECIALS</span>
+                <h2>Spring & Summer Packages</h2>
+                <p>Perfect weather, perfect prices</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Seasonal Deal 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card deal-card-compact shadow-sm">
+                        <img src="assets/images/alps.jpg"
+                            class="card-img-top" alt="Switzerland">
+                        <div class="deal-label">Summer Special</div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Swiss Alps Tour</h6>
+                            <p class="destination-info">
+                                <i class="bi bi-geo-alt-fill"></i> Switzerland · 7D/6N
+                            </p>
+                            <div class="compact-price">
+                                <span class="old">₹1,65,000</span>
+                                <span class="new">₹99,999</span>
+                            </div>
+                            <span class="save-badge">Save 39%</span>
+                            <a href="booking.html" class="btn btn-custom-1 w-100 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seasonal Deal 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card deal-card-compact shadow-sm">
+                        <img src="assets/images/bali.jpg"
+                            class="card-img-top" alt="Bali">
+                        <div class="deal-label">Spring Offer</div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Bali Island Hopping</h6>
+                            <p class="destination-info">
+                                <i class="bi bi-geo-alt-fill"></i> Bali, Indonesia · 5D/4N
+                            </p>
+                            <div class="compact-price">
+                                <span class="old">₹68,000</span>
+                                <span class="new">₹42,999</span>
+                            </div>
+                            <span class="save-badge">Save 37%</span>
+                            <a href="booking.html" class="btn btn-custom-1 w-100 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seasonal Deal 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card deal-card-compact shadow-sm">
+                        <img src="assets/images/london.png"
+                            class="card-img-top" alt="London">
+                        <div class="deal-label">Early Bird</div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">London City Break</h6>
+                            <p class="destination-info">
+                                <i class="bi bi-geo-alt-fill"></i> London, UK · 4D/3N
+                            </p>
+                            <div class="compact-price">
+                                <span class="old">₹95,000</span>
+                                <span class="new">₹65,999</span>
+                            </div>
+                            <span class="save-badge">Save 31%</span>
+                            <a href="booking.html" class="btn btn-custom-1 w-100 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seasonal Deal 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card deal-card-compact shadow-sm">
+                        <img src="assets/images/santorini.jpg"
+                            class="card-img-top" alt="Santorini">
+                        <div class="deal-label">Honeymoon Special</div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Santorini Romance</h6>
+                            <p class="destination-info">
+                                <i class="bi bi-geo-alt-fill"></i> Greece · 6D/5N
+                            </p>
+                            <div class="compact-price">
+                                <span class="old">₹1,45,000</span>
+                                <span class="new">₹94,999</span>
+                            </div>
+                            <span class="save-badge">Save 34%</span>
+                            <a href="booking.html" class="btn btn-custom-1 w-100 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Getaways Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge bg-primary">WEEKEND SPECIALS</span>
+                <h2>Quick Escapes</h2>
+                <p>Perfect for short breaks</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Weekend 1 -->
+                <div class="col-md-4">
+                    <div class="weekend-deal-card">
+                        <img src="assets/images/goa.jfif"
+                            alt="Goa Weekend">
+                        <div class="weekend-content">
+                            <h5>Goa Beach Weekend</h5>
+                            <p><i class="bi bi-calendar3"></i> 3D/2N · <i class="bi bi-people"></i> Min 2 People</p>
+                            <div class="weekend-price">
+                                <del>₹18,999</del>
+                                <span>₹12,499</span>
+                            </div>
+                            <a href="booking.html" class="btn btn-custom mt-2">Quick Book</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekend 2 -->
+                <div class="col-md-4">
+                    <div class="weekend-deal-card">
+                        <img src="assets/images/udaipur.avif"
+                            alt="Udaipur Weekend">
+                        <div class="weekend-content">
+                            <h5>Udaipur Royal Weekend</h5>
+                            <p><i class="bi bi-calendar3"></i> 3D/2N · <i class="bi bi-people"></i> Min 2 People</p>
+                            <div class="weekend-price">
+                                <del>₹22,999</del>
+                                <span>₹15,999</span>
+                            </div>
+                            <a href="booking.html" class="btn btn-custom mt-2">Quick Book</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekend 3 -->
+                <div class="col-md-4">
+                    <div class="weekend-deal-card">
+                        <img src="assets/images/manali.jpg"
+                            alt="Manali Weekend">
+                        <div class="weekend-content">
+                            <h5>Manali Mountain Escape</h5>
+                            <p><i class="bi bi-calendar3"></i> 3D/2N · <i class="bi bi-people"></i> Min 2 People</p>
+                            <div class="weekend-price">
+                                <del>₹19,999</del>
+                                <span>₹13,999</span>
+                            </div>
+                            <a href="booking.html" class="btn btn-custom mt-2">Quick Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Discount Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="group-discount-banner">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3 class="mb-3"><i class="bi bi-people-fill"></i> Group Travel Discounts</h3>
+                        <p class="mb-3">Traveling with friends or family? Get exclusive group discounts!</p>
+                        <ul class="group-benefits">
+                            <li><i class="bi bi-check2-circle"></i> 10% OFF for groups of 5-10 people</li>
+                            <li><i class="bi bi-check2-circle"></i> 15% OFF for groups of 11-20 people</li>
+                            <li><i class="bi bi-check2-circle"></i> 20% OFF for groups of 20+ people</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="contact.html" class="btn btn-lg btn-custom-1">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <i class="bi bi-envelope-heart newsletter-icon"></i>
+                    <h3 class="mb-3">Never Miss a Deal!</h3>
+                    <p class="mb-4">Subscribe to our newsletter and get exclusive deals delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <div class="input-group input-group-lg">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter your email"
+                                required>
+                            <button class="btn btn-custom-1" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer starts here -->
+    <footer class="text-white text-center text-lg-start mt-5 footer-custom">
+
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!--Grid row -->
+            <div class="row">
+
+                <!--Grid column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">NextStop Travel Agency</h5>
+                    <p>Your gateway to unforgettable travel experiences. Explore the world with us!</p>
+                </div>
+
+                <!--Quick links column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-white quick-link">Home</a></li>
+                        <li><a href="about.html" class="text-white quick-link">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white quick-link">Destinations</a></li>
+                        <li><a href="tours.html" class="text-white quick-link">Tours</a></li>
+                        <li><a href="deals.html" class="text-white quick-link">Deals</a></li>
+                    </ul>
+                </div>
+
+                <!--Contact column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123, XYZ Road, ABC City</li>
+                        <li><i class="bi bi-phone-fill"></i> +91 1234567890</li>
+                        <li><i class="bi bi-envelope-fill"></i>
+                            user@email.com
+                        </li>
+                    </ul>
+                </div> <!--Contact column end-->
+            </div> <!--Grid row end-->
+        </div> <!-- Grid container end-->
+        <p class="copyright">&copy; 2025 NextStop Travel Agency. All rights reserved.</p>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

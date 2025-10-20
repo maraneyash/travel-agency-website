@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand m-2" href="index.html">NextStop</a>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for your NextStop"
+                    aria-label="Search" />
+                <button class="btn btn-outline-light btn-custom" type="submit">Search</button>
+            </form>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links aligned to right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="deals.html">Deals</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- navbar tabs end -->
+            </div> <!-- right navbar end -->
+        </div> <!-- container end -->
+    </nav>
+    <!-- nav bar ends -->
+
+    <!-- Register Section -->
+    <div class="register-container">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-md-10 col-lg-9">
+                    <div class="card register-card shadow-lg">
+                        <div class="row g-0">
+                            <!-- Left Side - Image/Info -->
+                            <div class="col-md-6 register-card-left">
+                                <div class="register-info">
+                                    <h2 class="text-white mb-4">Join NextStop!</h2>
+                                    <p class="text-white mb-4">
+                                        Create your account and unlock a world of amazing travel experiences and
+                                        exclusive benefits.
+                                    </p>
+                                    <div class="register-features">
+                                        <div class="feature-item mb-3">
+                                            <i class="bi bi-gift-fill"></i>
+                                            <span>Welcome bonus on first booking</span>
+                                        </div>
+                                        <div class="feature-item mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <span>Earn reward points</span>
+                                        </div>
+                                        <div class="feature-item mb-3">
+                                            <i class="bi bi-bell-fill"></i>
+                                            <span>Early access to deals</span>
+                                        </div>
+                                        <div class="feature-item mb-3">
+                                            <i class="bi bi-shield-fill-check"></i>
+                                            <span>Secure & protected bookings</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Side - Register Form -->
+                            <div class="col-md-6">
+                                <div class="register-form-container p-5">
+                                    <div class="text-center mb-4">
+                                        <h3 class="register-title">Create Account</h3>
+                                        <p class="text-muted">Fill in your details to get started</p>
+                                    </div>
+
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName" class="form-label">
+                                                    <i class="bi bi-person-fill"></i> First Name
+                                                </label>
+                                                <input type="text" class="form-control register-input" id="firstName"
+                                                    placeholder="Enter first name" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName" class="form-label">
+                                                    <i class="bi bi-person-fill"></i> Last Name
+                                                </label>
+                                                <input type="text" class="form-control register-input" id="lastName"
+                                                    placeholder="Enter last name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">
+                                                <i class="bi bi-envelope-fill"></i> Email Address
+                                            </label>
+                                            <input type="email" class="form-control register-input" id="email"
+                                                placeholder="Enter your email" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">
+                                                <i class="bi bi-telephone-fill"></i> Phone Number
+                                            </label>
+                                            <input type="tel" class="form-control register-input" id="phone"
+                                                placeholder="Enter your phone number" required>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="password" class="form-label">
+                                                    <i class="bi bi-lock-fill"></i> Password
+                                                </label>
+                                                <input type="password" class="form-control register-input" id="password"
+                                                    placeholder="Create password" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="confirmPassword" class="form-label">
+                                                    <i class="bi bi-lock-fill"></i> Confirm Password
+                                                </label>
+                                                <input type="password" class="form-control register-input"
+                                                    id="confirmPassword" placeholder="Re-enter password" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and
+                                                <a href="#" class="terms-link">Privacy Policy</a>
+                                            </label>
+                                        </div>
+
+                                        <div class="d-grid mb-3">
+                                            <button type="submit" class="btn btn-custom-1 btn-lg">
+                                                Create Account
+                                            </button>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <div class="text-center">
+                                            <p class="mb-2">Already have an account?</p>
+                                            <a href="login.html" class="btn btn-outline-secondary w-100">
+                                                Sign In
+                                            </a>
+                                        </div>
+
+                                        <div class="social-register mt-4">
+                                            <p class="text-center text-muted mb-3">Or register with</p>
+                                            <div class="row g-2">
+                                                <div class="col-6">
+                                                    <button type="button" class="btn btn-google w-100">
+                                                        <i class="bi bi-google"></i> Google
+                                                    </button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button type="button" class="btn btn-facebook w-100">
+                                                        <i class="bi bi-facebook"></i> Facebook
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Section ends -->
+
+    <!-- Footer starts here -->
+    <footer class="text-white text-center text-lg-start mt-5 footer-custom">
+
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!--Grid row -->
+            <div class="row">
+
+                <!--Grid column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">NextStop Travel Agency</h5>
+                    <p>Your gateway to unforgettable travel experiences. Explore the world with us!</p>
+                </div>
+
+                <!--Quick links column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-white quick-link">Home</a></li>
+                        <li><a href="about.html" class="text-white quick-link">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white quick-link">Destinations</a></li>
+                        <li><a href="tours.html" class="text-white quick-link">Tours</a></li>
+                        <li><a href="deals.html" class="text-white quick-link">Deals</a></li>
+                    </ul>
+                </div>
+
+                <!--Contact column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123, XYZ Road, ABC City</li>
+                        <li><i class="bi bi-phone-fill"></i> +91 1234567890</li>
+                        <li><i class="bi bi-envelope-fill"></i>
+                            user@email.com
+                        </li>
+                    </ul>
+                </div> <!--Contact column end-->
+            </div> <!--Grid row end-->
+        </div> <!-- Grid container end-->
+        <p class="copyright">&copy; 2025 NextStop Travel Agency. All rights reserved.</p>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

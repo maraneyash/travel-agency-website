@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand m-2" href="index.html">NextStop</a>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for your NextStop"
+                    aria-label="Search" />
+                <button class="btn btn-outline-light btn-custom" type="submit">Search</button>
+            </form>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links aligned to right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="deals.html">Deals</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- navbar tabs end -->
+            </div> <!-- right navbar end -->
+        </div> <!-- container end -->
+    </nav>
+    <!-- nav bar ends -->
+
+    <!-- Booking Hero Section -->
+    <section class="booking-hero text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Complete Your Booking</h1>
+            <p class="lead">You're just a few steps away from your dream vacation!</p>
+        </div>
+    </section>
+
+    <!-- Booking Content Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column - Tour Summary -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card booking-summary-card shadow-sm sticky-top" style="top: 100px;">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="text-center mb-0">Booking Summary</h2>
+                        </div>
+                        <div class="card-body">
+                            <!-- Tour Image -->
+                            <img src="assets/images/goa.jfif"
+                                class="img-fluid rounded mb-3" alt="Tour Package">
+
+                            <!-- Tour Details -->
+                            <h5 class="tour-name mb-3">Goa Beach Paradise</h5>
+
+                            <div class="tour-info mb-2">
+                                <i class="bi bi-geo-alt-fill text-primary"></i>
+                                <strong>Destination:</strong> Goa, India
+                            </div>
+
+                            <div class="tour-info mb-2">
+                                <i class="bi bi-calendar-fill text-primary"></i>
+                                <strong>Duration:</strong> 4 Days / 3 Nights
+                            </div>
+
+                            <div class="tour-info mb-2">
+                                <i class="bi bi-people-fill text-primary"></i>
+                                <strong>Group Size:</strong> Up to 15 people
+                            </div>
+
+                            <hr>
+
+                            <!-- Inclusions -->
+                            <h6 class="fw-bold mb-3">Package Includes:</h6>
+                            <ul class="list-unstyled inclusion-list">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Accommodation</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Daily Breakfast</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Airport Transfers</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Sightseeing Tours</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Travel Guide</li>
+                            </ul>
+
+                            <hr>
+
+                            <!-- Price Breakdown -->
+                            <div class="price-breakdown">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Base Price (per person):</span>
+                                    <span class="fw-bold">₹15,999</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Number of Travelers:</span>
+                                    <span class="fw-bold" id="travelerCount">1</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Tax & Service Charges:</span>
+                                    <span class="fw-bold" id="taxAmount">₹1,600</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Total Amount:</h5>
+                                    <h4 class="mb-0 fw-bold" style="color: #2d545e;" id="totalAmount">₹17,599</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Booking Form -->
+                <div class="col-lg-8">
+                    <div class="card booking-form-card shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4 custom-head">Booking Details</h2>
+
+                            <form class="needs-validation" novalidate id="bookingForm">
+
+                                <!-- Travel Information Section -->
+                                <div class="form-section mb-4">
+                                    <h5 class="section-title mb-3">
+                                        <i class="bi bi-airplane-fill"></i> Travel Information
+                                    </h5>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="checkInDate" class="form-label">Check-in Date</label>
+                                            <input type="date" class="form-control booking-input" id="checkInDate"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Please select a check-in date.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="checkOutDate" class="form-label">Check-out Date</label>
+                                            <input type="date" class="form-control booking-input" id="checkOutDate"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Please select a check-out date.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="numAdults" class="form-label">Number of Adults</label>
+                                            <select class="form-select booking-input" id="numAdults" required>
+                                                <option value="" selected disabled>Select number</option>
+                                                <option value="1">1 Adult</option>
+                                                <option value="2">2 Adults</option>
+                                                <option value="3">3 Adults</option>
+                                                <option value="4">4 Adults</option>
+                                                <option value="5">5+ Adults</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select number of adults.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="numChildren" class="form-label">Number of Children (0-12
+                                                years)</label>
+                                            <select class="form-select booking-input" id="numChildren">
+                                                <option value="0" selected>No Children</option>
+                                                <option value="1">1 Child</option>
+                                                <option value="2">2 Children</option>
+                                                <option value="3">3 Children</option>
+                                                <option value="4">4+ Children</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="roomType" class="form-label">Room Preference</label>
+                                        <select class="form-select booking-input" id="roomType" required>
+                                            <option value="" selected disabled>Select room type</option>
+                                            <option value="single">Single Room</option>
+                                            <option value="double">Double Room</option>
+                                            <option value="twin">Twin Sharing</option>
+                                            <option value="suite">Suite</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a room type.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Details Section -->
+                                <div class="form-section mb-4">
+                                    <h5 class="section-title mb-3">
+                                        <i class="bi bi-person-fill"></i> Customer Details
+                                    </h5>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name *</label>
+                                            <input type="text" class="form-control booking-input" id="firstName"
+                                                placeholder="Enter first name" required>
+                                            <div class="invalid-feedback">
+                                                Please enter your first name.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control booking-input" id="lastName"
+                                                placeholder="Enter last name" required>
+                                            <div class="invalid-feedback">
+                                                Please enter your last name.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control booking-input" id="email"
+                                                placeholder="example@email.com" required>
+                                            <div class="invalid-feedback">
+                                                Please enter a valid email address.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <input type="tel" class="form-control booking-input" id="phone"
+                                                placeholder="+91 1234567890" pattern="[0-9+\-\s()]+" required>
+                                            <div class="invalid-feedback">
+                                                Please enter a valid phone number.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address *</label>
+                                        <textarea class="form-control booking-input" id="address" rows="3"
+                                            placeholder="Enter your complete address" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please enter your address.
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label">City *</label>
+                                            <input type="text" class="form-control booking-input" id="city"
+                                                placeholder="Enter city" required>
+                                            <div class="invalid-feedback">
+                                                Please enter your city.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="pincode" class="form-label">Pin Code *</label>
+                                            <input type="text" class="form-control booking-input" id="pincode"
+                                                placeholder="Enter pin code" pattern="[0-9]{6}" required>
+                                            <div class="invalid-feedback">
+                                                Please enter a valid 6-digit pin code.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Special Requests Section -->
+                                <div class="form-section mb-4">
+                                    <h5 class="section-title mb-3">
+                                        <i class="bi bi-chat-dots-fill"></i> Special Requests
+                                    </h5>
+
+                                    <div class="mb-3">
+                                        <label for="specialRequests" class="form-label">Any Special Requirements?
+                                            (Optional)</label>
+                                        <textarea class="form-control booking-input" id="specialRequests" rows="4"
+                                            placeholder="e.g., dietary requirements, accessibility needs, special occasions..."></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Method Section -->
+                                <div class="form-section mb-4">
+                                    <h5 class="section-title mb-3">
+                                        <i class="bi bi-credit-card-fill"></i> Payment Method
+                                    </h5>
+
+                                    <div class="payment-options">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="paymentFull" value="full" checked required>
+                                            <label class="form-check-label" for="paymentFull">
+                                                <strong>Pay Full Amount</strong> - Complete payment now
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="paymentPartial" value="partial" required>
+                                            <label class="form-check-label" for="paymentPartial">
+                                                <strong>Pay Partial (30%)</strong> - Pay remaining amount later
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="form-section mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                        <label class="form-check-label" for="termsCheck">
+                                            I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+                                            and <a href="#" class="terms-link">Cancellation Policy</a> *
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-custom-1 btn-lg">
+                                        Confirm Booking & Proceed to Payment
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary"
+                                        onclick="window.history.back()">
+                                        <i class="bi bi-arrow-left"></i> Back to Tours
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer starts here -->
+    <footer class="text-white text-center text-lg-start mt-5 footer-custom">
+
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!--Grid row -->
+            <div class="row">
+
+                <!--Grid column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">NextStop Travel Agency</h5>
+                    <p>Your gateway to unforgettable travel experiences. Explore the world with us!</p>
+                </div>
+
+                <!--Quick links column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-white quick-link">Home</a></li>
+                        <li><a href="about.html" class="text-white quick-link">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white quick-link">Destinations</a></li>
+                        <li><a href="tours.html" class="text-white quick-link">Tours</a></li>
+                        <li><a href="deals.html" class="text-white quick-link">Deals</a></li>
+                    </ul>
+                </div>
+
+                <!--Contact column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123, XYZ Road, ABC City</li>
+                        <li><i class="bi bi-phone-fill"></i> +91 1234567890</li>
+                        <li><i class="bi bi-envelope-fill"></i>
+                            user@email.com
+                        </li>
+                    </ul>
+                </div> <!--Contact column end-->
+            </div> <!--Grid row end-->
+        </div> <!-- Grid container end-->
+        <p class="copyright">&copy; 2025 NextStop Travel Agency. All rights reserved.</p>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

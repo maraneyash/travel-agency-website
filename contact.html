@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand m-2" href="index.html">NextStop</a>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for your NextStop"
+                    aria-label="Search" />
+                <button class="btn btn-outline-light btn-custom" type="submit">Search</button>
+            </form>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links aligned to right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="deals.html">Deals</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item active" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- navbar tabs end -->
+            </div> <!-- right navbar end -->
+        </div> <!-- container end -->
+    </nav>
+    <!-- nav bar ends -->
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Get In Touch</h1>
+            <p class="lead">We'd love to hear from you! Let us help plan your next adventure.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Left Column - Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card contact-form-card shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4 custom-head">Send Us a Message</h2>
+
+                            <form class="needs-validation" novalidate id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactName" class="form-label">Your Name *</label>
+                                        <input type="text" class="form-control contact-input" id="contactName"
+                                            placeholder="Enter your name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your name.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control contact-input" id="contactEmail"
+                                            placeholder="your@email.com" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contactPhone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control contact-input" id="contactPhone"
+                                        placeholder="+91 1234567890" pattern="[0-9+\-\s()]+">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid phone number.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contactSubject" class="form-label">Subject *</label>
+                                    <select class="form-select contact-input" id="contactSubject" required>
+                                        <option value="" selected disabled>Select subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="booking">Booking Question</option>
+                                        <option value="package">Package Information</option>
+                                        <option value="support">Customer Support</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a subject.
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="contactMessage" class="form-label">Your Message *</label>
+                                    <textarea class="form-control contact-input" id="contactMessage" rows="6"
+                                        placeholder="Tell us how we can help you..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-custom-1 btn-lg">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Info -->
+                <div class="col-lg-5">
+                    <!-- Company Information Card -->
+                    <div class="card contact-info-card shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4 custom-head">Contact Information</h2>
+
+                            <div class="contact-detail mb-4">
+                                <div class="contact-icon-wrapper">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h6 class="fw-bold mb-1">Office Address</h6>
+                                    <p class="mb-0 text-muted">123, XYZ Road, ABC City<br>Maharashtra, India - 400001
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail mb-4">
+                                <div class="contact-icon-wrapper">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h6 class="fw-bold mb-1">Phone Numbers</h6>
+                                    <p class="mb-0 text-muted">
+                                        <a href="tel:+911234567890" class="contact-link">+91 1234567890</a><br>
+                                        <a href="tel:+910987654321" class="contact-link">+91 0987654321</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail mb-4">
+                                <div class="contact-icon-wrapper">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h6 class="fw-bold mb-1">Email Addresses</h6>
+                                    <p class="mb-0 text-muted">
+                                        <a href="mailto:info@nextstop.com"
+                                            class="contact-link">info@nextstop.com</a><br>
+                                        <a href="mailto:support@nextstop.com"
+                                            class="contact-link">support@nextstop.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail mb-4">
+                                <div class="contact-icon-wrapper">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h6 class="fw-bold mb-1">Working Hours</h6>
+                                    <p class="mb-0 text-muted">
+                                        Mon - Fri: 9:00 AM - 7:00 PM<br>
+                                        Sat: 10:00 AM - 5:00 PM<br>
+                                        Sun: Closed
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Social Media Section -->
+                            <h6 class="fw-bold mb-3">Follow Us On Social Media</h6>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon facebook" title="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon twitter" title="Twitter">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon instagram" title="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon linkedin" title="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon youtube" title="YouTube">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                                <a href="#" class="social-icon whatsapp" title="WhatsApp">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact Card -->
+                    <div class="card quick-contact-card shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <i class="bi bi-chat-dots-fill quick-contact-icon"></i>
+                            <h5 class="mt-3 mb-2">Need Immediate Assistance?</h5>
+                            <p class="text-muted mb-3">Our support team is available 24/7 for urgent queries</p>
+                            <a href="tel:+911234567890" class="btn btn-custom-1 w-100 mb-2">
+                                Call Now
+                            </a>
+                            <a href="https://wa.me/911234567890" class="btn btn-outline-success w-100" target="_blank">
+                                WhatsApp Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 custom-head">Find Us Here</h2>
+
+            <div class="map-container shadow-lg">
+                <!-- Google Maps Embed -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.64303438718!2d72.71637233966796!3d19.082502005400094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 custom-head">Frequently Asked Questions</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    How do I book a tour with NextStop?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can book a tour by browsing our destinations or tour packages, selecting your
+                                    preferred option,
+                                    and clicking the "Book Now" button. Fill in the booking form with your details and
+                                    proceed to payment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    What is your cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Cancellations made 30+ days before departure receive 90% refund. 15-29 days: 50%
+                                    refund.
+                                    Less than 15 days: No refund. Terms may vary by package.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Do you offer customized tour packages?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We specialize in creating personalized itineraries. Contact us with your
+                                    preferences,
+                                    and our team will design a package tailored to your needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept all major credit/debit cards, UPI, net banking, and digital wallets.
+                                    Partial payment options are also available for select packages.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer starts here -->
+    <footer class="text-white text-center text-lg-start mt-5 footer-custom">
+
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!--Grid row -->
+            <div class="row">
+
+                <!--Grid column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">NextStop Travel Agency</h5>
+                    <p>Your gateway to unforgettable travel experiences. Explore the world with us!</p>
+                </div>
+
+                <!--Quick links column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-white quick-link">Home</a></li>
+                        <li><a href="about.html" class="text-white quick-link">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white quick-link">Destinations</a></li>
+                        <li><a href="tours.html" class="text-white quick-link">Tours</a></li>
+                        <li><a href="deals.html" class="text-white quick-link">Deals</a></li>
+                    </ul>
+                </div>
+
+                <!--Contact column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123, XYZ Road, ABC City</li>
+                        <li><i class="bi bi-phone-fill"></i> +91 1234567890</li>
+                        <li><i class="bi bi-envelope-fill"></i>
+                            user@email.com
+                        </li>
+                    </ul>
+                </div> <!--Contact column end-->
+            </div> <!--Grid row end-->
+        </div> <!-- Grid container end-->
+        <p class="copyright">&copy; 2025 NextStop Travel Agency. All rights reserved.</p>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

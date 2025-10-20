@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand m-2" href="index.html">NextStop</a>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for your NextStop"
+                    aria-label="Search" />
+                <button class="btn btn-custom" type="submit">Search</button>
+            </form>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links aligned to right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="deals.html">Deals</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- navbar tabs end -->
+            </div> <!-- right navbar end -->
+        </div> <!-- container end -->
+    </nav>
+    <!-- nav bar ends -->
+
+    <!-- Modern Hero Section -->
+    <section class="modern-hero-section">
+        <div class="hero-background">
+            <img src="assets/images/home.jfif" alt="Travel Background" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="row align-items-center" style="min-height: 85vh;">
+                    <div class="col-lg-7">
+                        <div class="hero-text-content">
+                            <span class="hero-subtitle">
+                                <i class="bi bi-airplane-fill me-2"></i>
+                                Start Your Journey Today
+                            </span>
+                            <h1 class="hero-main-title">
+                                Discover Your Next
+                                <span class="highlight-text">Adventure</span>
+                            </h1>
+                            <p class="hero-description">
+                                Explore breathtaking destinations, create unforgettable memories, and experience the
+                                world like never before with our expertly crafted travel packages.
+                            </p>
+
+                            <!-- Quick Action Buttons -->
+                            <div class="hero-actions">
+                                <a href="tours.html" class="btn btn-custom-1 btn-lg me-3">
+                                    Explore Tours
+                                </a>
+                                <a href="destinations.html" class="btn btn-custom btn-lg">
+                                    View Destinations
+                                </a>
+                            </div>
+
+                            <!-- Quick Stats -->
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="stat-details">
+                                        <h4>50,000+</h4>
+                                        <p>Happy Travelers</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div class="stat-details">
+                                        <h4>200+</h4>
+                                        <p>Destinations</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="bi bi-award-fill"></i>
+                                    </div>
+                                    <div class="stat-details">
+                                        <h4>15+ Years</h4>
+                                        <p>Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Search Card -->
+                    <div class="col-lg-5">
+                        <div class="hero-search-card">
+                            <h3 class="search-card-title">
+                                <i class="bi bi-search me-2"></i>
+                                Plan Your Trip
+                            </h3>
+                            <form class="hero-search-form">
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        <i class="bi bi-geo-alt-fill me-1"></i>
+                                        Where to?
+                                    </label>
+                                    <select class="form-select">
+                                        <option selected>Choose your destination</option>
+                                        <option>Paris, France</option>
+                                        <option>Maldives</option>
+                                        <option>Switzerland</option>
+                                        <option>Thailand</option>
+                                        <option>Santorini, Greece</option>
+                                        <option>Iceland</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <label class="form-label">
+                                            <i class="bi bi-calendar-event me-1"></i>
+                                            Check-in
+                                        </label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">
+                                            <i class="bi bi-calendar-check me-1"></i>
+                                            Check-out
+                                        </label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <label class="form-label">
+                                            <i class="bi bi-people-fill me-1"></i>
+                                            Travelers
+                                        </label>
+                                        <select class="form-select">
+                                            <option>1 Person</option>
+                                            <option selected>2 People</option>
+                                            <option>3-4 People</option>
+                                            <option>5+ People</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">
+                                            <i class="bi bi-tag-fill me-1"></i>
+                                            Trip Type
+                                        </label>
+                                        <select class="form-select">
+                                            <option>Adventure</option>
+                                            <option selected>Beach</option>
+                                            <option>Cultural</option>
+                                            <option>Luxury</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom w-100 btn-lg">
+                                    Search Tours
+                                </button>
+                            </form>
+
+                            <!-- Popular Destinations -->
+                            <div class="popular-destinations-mini">
+                                <p class="mb-2 text-muted small">Popular:</p>
+                                <div class="destination-tags">
+                                    <a href="destinations.html" class="destination-tag">Paris</a>
+                                    <a href="destinations.html" class="destination-tag">Maldives</a>
+                                    <a href="destinations.html" class="destination-tag">Switzerland</a>
+                                    <a href="destinations.html" class="destination-tag">Thailand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Modern Hero Section ends -->
+
+    <!-- Featured Destinations Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 custom-head">Featured Destinations</h2>
+
+        <!-- Domestic Destinations -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/goa.jfif" class="card-img-top destination-card-img" alt="Goa">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Goa, India</h5>
+                        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> 4.7 (3,250 reviews)</p>
+                        <p class="card-text flex-grow-1">Beautiful beaches, vibrant nightlife, Portuguese heritage, and
+                            water sports paradise.</p>
+                        <a href="destinations.html" class="btn btn-custom-1 mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/manali.jpg" class="card-img-top destination-card-img" alt="Manali">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Manali, Himachal Pradesh</h5>
+                        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> 4.8 (2,890 reviews)</p>
+                        <p class="card-text flex-grow-1">Snow-capped mountains, adventure sports, scenic valleys, and
+                            ancient temples.</p>
+                        <a href="destinations.html" class="btn btn-custom-1 mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/kerala.jfif" class="card-img-top destination-card-img" alt="Kerala">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Kerala, India</h5>
+                        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> 4.9 (3,450 reviews)</p>
+                        <p class="card-text flex-grow-1">Backwaters, houseboats, lush greenery, Ayurvedic spas, and
+                            serene beaches.</p>
+                        <a href="destinations.html" class="btn btn-custom-1 mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- International Destinations -->
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/paris" class="card-img-top destination-card-img" alt="Paris">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> 4.8 (2,450 reviews)</p>
+                        <p class="card-text flex-grow-1">Experience the city of love with iconic landmarks, world-class
+                            museums, and exquisite cuisine.</p>
+                        <a href="destinations.html" class="btn btn-custom-1 mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/maldives.jfif" class="card-img-top destination-card-img" alt="Maldives">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Maldives</h5>
+                        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> 4.9 (3,120 reviews)</p>
+                        <p class="card-text flex-grow-1">Luxury island resorts, pristine beaches, and stunning
+                            underwater world await you.</p>
+                        <a href="destinations.html" class="btn btn-custom-1 mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/alps.jpg" class="card-img-top destination-card-img" alt="Switzerland">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Swiss Alps, Switzerland</h5>
+                        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> 4.9 (1,890 reviews)</p>
+                        <p class="card-text flex-grow-1">Breathtaking mountain scenery, charming villages, and
+                            world-class skiing destinations.</p>
+                        <a href="destinations.html" class="btn btn-custom-1 mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Destinations Button -->
+        <div class="text-center mt-5">
+            <a href="destinations.html" class="btn btn-primary-custom btn-lg">View All Destinations</a>
+        </div>
+    </div>
+    <!-- Featured Destinations ends -->
+
+    <!-- Tours Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 custom-head">Popular Tour Packages</h2>
+        <div class="row g-4">
+            <!-- Tour 1: Goa Beach Paradise -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/goa.jfif" class="card-img-top destination-card-img"
+                        alt="Goa Beach Paradise">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Goa Beach Paradise</h5>
+                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Goa, India</p>
+                        <p class="card-text flex-grow-1">Enjoy pristine beaches, water sports, beachside parties, and
+                            explore Portuguese forts.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-muted"><i class="bi bi-clock-fill"></i> 4D/3N</span>
+                            <span class="fw-bold" style="color: #2d545e;">₹15,999</span>
+                        </div>
+                        <a href="tours.html" class="btn btn-custom-1 mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 2: Manali Adventure -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/manali.jpg" class="card-img-top destination-card-img"
+                        alt="Manali Adventure">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Manali Adventure Escape</h5>
+                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Manali, Himachal Pradesh</p>
+                        <p class="card-text flex-grow-1">Trekking, paragliding, river rafting, Solang Valley, and
+                            Rohtang Pass visit.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-muted"><i class="bi bi-clock-fill"></i> 5D/4N</span>
+                            <span class="fw-bold" style="color: #2d545e;">₹22,999</span>
+                        </div>
+                        <a href="tours.html" class="btn btn-custom-1 mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 3: Kerala Backwaters -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/kerala.jfif" class="card-img-top destination-card-img"
+                        alt="Kerala Backwaters">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Kerala Backwaters Retreat</h5>
+                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Kerala, India</p>
+                        <p class="card-text flex-grow-1">Houseboat cruise, Ayurvedic spa, tea plantation visits, and
+                            serene beach relaxation.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-muted"><i class="bi bi-clock-fill"></i> 6D/5N</span>
+                            <span class="fw-bold" style="color: #2d545e;">₹28,999</span>
+                        </div>
+                        <a href="tours.html" class="btn btn-custom-1 mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 4: Paris Romantic -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/paris" class="card-img-top destination-card-img" alt="Paris Romantic">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Paris Romantic Getaway</h5>
+                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Paris, France</p>
+                        <p class="card-text flex-grow-1">Eiffel Tower, Louvre Museum, Seine River cruise, and gourmet
+                            dining experiences.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-muted"><i class="bi bi-clock-fill"></i> 6D/5N</span>
+                            <span class="fw-bold" style="color: #2d545e;">₹1,25,999</span>
+                        </div>
+                        <a href="tours.html" class="btn btn-custom-1 mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 5: Maldives Luxury -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/maldives.jfif" class="card-img-top destination-card-img"
+                        alt="Maldives Luxury">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Maldives Luxury Escape</h5>
+                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Maldives</p>
+                        <p class="card-text flex-grow-1">Overwater villa stay, snorkeling, diving, spa treatments, and
+                            private beach access.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-muted"><i class="bi bi-clock-fill"></i> 5D/4N</span>
+                            <span class="fw-bold" style="color: #2d545e;">₹1,85,999</span>
+                        </div>
+                        <a href="tours.html" class="btn btn-custom-1 mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 6: Thailand Discovery -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/thailand.avif" class="card-img-top destination-card-img"
+                        alt="Thailand Discovery">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Thailand Discovery Tour</h5>
+                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Bangkok & Pattaya, Thailand</p>
+                        <p class="card-text flex-grow-1">Grand Palace, floating markets, Coral Island, cabaret shows,
+                            and street food.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-muted"><i class="bi bi-clock-fill"></i> 6D/5N</span>
+                            <span class="fw-bold" style="color: #2d545e;">₹52,999</span>
+                        </div>
+                        <a href="tours.html" class="btn btn-custom-1 mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="tours.html" class="btn btn-primary-custom btn-lg px-5">View All Tours</a>
+        </div>
+    </div>
+    <!-- Tours Section ends -->
+
+    <!-- Special Offers Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 custom-head">Special Offers</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card special-offer-card shadow-lg">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="card-title text-white">Early Bird Discount</h3>
+                                <p class="card-text text-white">Book 3 months in advance and save up to 25% on all
+                                    international
+                                    packages!</p>
+                                <ul class="list-unstyled text-white">
+                                    <li><i class="bi bi-check-circle-fill"></i> Valid for all destinations</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Free cancellation up to 30 days</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Complimentary airport transfers</li>
+                                </ul>
+                                <a href="deals.html" class="btn btn-custom-1 mt-2">View Deals</a>
+                            </div>
+                            <span class="badge bg-warning text-dark fs-4">25% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card special-offer-card shadow-lg">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="card-title text-white">Group Travel Bonanza</h3>
+                                <p class="card-text text-white">Travel with 6+ people and get exclusive group discounts
+                                    and perks!
+                                </p>
+                                <ul class="list-unstyled text-white">
+                                    <li><i class="bi bi-check-circle-fill"></i> Up to 30% group discount</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Free tour guide included</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Customizable itineraries</li>
+                                </ul>
+                                <a href="deals.html" class="btn btn-custom-1 mt-2">Learn More</a>
+                            </div>
+                            <span class="badge bg-warning text-dark fs-4">30% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Limited Time Offers -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card limited-offer-card shadow">
+                    <div class="card-header limited-offer-header">
+                        <h5 class="mb-0"><i class="bi bi-lightning-fill"></i> Flash Sale</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Dubai Luxury Package</h6>
+                        <p class="mb-2"><span class="text-decoration-line-through text-muted">₹75,999</span> <span
+                                class="fw-bold fs-4 limited-offer-price">₹49,999</span></p>
+                        <p class="small">5 Days / 4 Nights | 5-star hotel</p>
+                        <p class="small limited-offer-highlight"><i class="bi bi-clock"></i> Offer ends in 24 hours!</p>
+                        <a href="booking.html" class="btn btn-custom-1 w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card limited-offer-card shadow">
+                    <div class="card-header limited-offer-header">
+                        <h5 class="mb-0"><i class="bi bi-tag-fill"></i> Best Value</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Bali Island Escape</h6>
+                        <p class="mb-2"><span class="text-decoration-line-through text-muted">₹55,999</span> <span
+                                class="fw-bold fs-4 limited-offer-price">₹38,999</span></p>
+                        <p class="small">6 Days / 5 Nights | Beach resort</p>
+                        <p class="small limited-offer-highlight"><i class="bi bi-gift"></i> Free spa session included
+                        </p>
+                        <a href="booking.html" class="btn btn-custom-1 w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card limited-offer-card shadow">
+                    <div class="card-header limited-offer-header">
+                        <h5 class="mb-0"><i class="bi bi-star-fill"></i> Premium Deal</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Europe Tour (5 Countries)</h6>
+                        <p class="mb-2"><span class="text-decoration-line-through text-muted">₹1,99,999</span> <span
+                                class="fw-bold fs-4 limited-offer-price">₹1,49,999</span></p>
+                        <p class="small">12 Days / 11 Nights | Luxury hotels</p>
+                        <p class="small limited-offer-highlight"><i class="bi bi-airplane-fill"></i> All flights
+                            included</p>
+                        <a href="booking.html" class="btn btn-custom-1 w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Special Offers ends -->
+
+    <!-- Call to Action Section -->
+    <div class="container-fluid my-5 py-5 cta-section">
+        <div class="container text-center text-white">
+            <h1 class="display-4 mb-4">Ready for Your Next Adventure?</h1>
+            <p class="lead mb-4">Book your dream vacation today and create memories that last a lifetime!</p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-shield-check display-4"></i>
+                        <h5 class="mt-2">Secure Booking</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-wallet2 display-4"></i>
+                        <h5 class="mt-2">Best Price Guarantee</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-headset display-4"></i>
+                        <h5 class="mt-2">24/7 Support</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <i class="bi bi-award display-4"></i>
+                        <h5 class="mt-2">Trusted by 50K+</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="booking.html" class="btn btn-lg px-5 py-3 me-2 btn-custom-1">
+                    Book Now
+                </a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 btn-custom">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action ends -->
+
+    <!-- Footer starts here -->
+    <footer class="text-white text-center text-lg-start mt-5 footer-custom">
+
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!--Grid row -->
+            <div class="row">
+
+                <!--Grid column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">NextStop Travel Agency</h5>
+                    <p>Your gateway to unforgettable travel experiences. Explore the world with us!</p>
+                </div>
+
+                <!--Quick links column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-white quick-link">Home</a></li>
+                        <li><a href="about.html" class="text-white quick-link">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white quick-link">Destinations</a></li>
+                        <li><a href="tours.html" class="text-white quick-link">Tours</a></li>
+                        <li><a href="deals.html" class="text-white quick-link">Deals</a></li>
+                    </ul>
+                </div>
+
+                <!--Contact column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123, XYZ Road, ABC City</li>
+                        <li><i class="bi bi-phone-fill"></i> +91 1234567890</li>
+                        <li><i class="bi bi-envelope-fill"></i> user@email.com</li>
+                    </ul>
+                </div> <!--Contact column end-->
+            </div> <!--Grid row end-->
+        </div> <!-- Grid container end-->
+        <p class="copyright">&copy; 2025 NextStop Travel Agency. All rights reserved.</p>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
