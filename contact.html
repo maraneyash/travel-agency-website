@@ -83,38 +83,33 @@
                         <div class="card-body p-4">
                             <h2 class="text-center mb-4 custom-head">Send Us a Message</h2>
 
-                            <form class="needs-validation" novalidate id="contactForm">
+                            <form novalidate id="contactForm">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="contactName" class="form-label">Your Name *</label>
+                                        <label for="contactName" class="form-label"><i class="bi bi-person-fill me-2"
+                                                aria-hidden="true"></i>Your Name</label>
                                         <input type="text" class="form-control contact-input" id="contactName"
                                             placeholder="Enter your name" required>
-                                        <div class="invalid-feedback">
-                                            Please enter your name.
-                                        </div>
                                     </div>
 
                                     <div class="col-md-6 mb-3">
-                                        <label for="contactEmail" class="form-label">Email Address *</label>
+                                        <label for="contactEmail" class="form-label"><i class="bi bi-envelope-fill me-2"
+                                                aria-hidden="true"></i>Email Address</label>
                                         <input type="email" class="form-control contact-input" id="contactEmail"
                                             placeholder="your@email.com" required>
-                                        <div class="invalid-feedback">
-                                            Please enter a valid email.
-                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="contactPhone" class="form-label">Phone Number</label>
+                                    <label for="contactPhone" class="form-label"><i class="bi bi-telephone-fill me-2"
+                                            aria-hidden="true"></i>Phone Number</label>
                                     <input type="tel" class="form-control contact-input" id="contactPhone"
-                                        placeholder="+91 1234567890" pattern="[0-9+\-\s()]+">
-                                    <div class="invalid-feedback">
-                                        Please enter a valid phone number.
-                                    </div>
+                                        placeholder="+91 1234567890">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="contactSubject" class="form-label">Subject *</label>
+                                    <label for="contactSubject" class="form-label"><i class="bi bi-tag-fill me-2"
+                                            aria-hidden="true"></i>Subject</label>
                                     <select class="form-select contact-input" id="contactSubject" required>
                                         <option value="" selected disabled>Select subject</option>
                                         <option value="general">General Inquiry</option>
@@ -124,18 +119,14 @@
                                         <option value="feedback">Feedback</option>
                                         <option value="other">Other</option>
                                     </select>
-                                    <div class="invalid-feedback">
-                                        Please select a subject.
-                                    </div>
                                 </div>
 
                                 <div class="mb-4">
-                                    <label for="contactMessage" class="form-label">Your Message *</label>
+                                    <label for="contactMessage" class="form-label"><i
+                                            class="bi bi-chat-left-text-fill me-2" aria-hidden="true"></i>Your
+                                        Message</label>
                                     <textarea class="form-control contact-input" id="contactMessage" rows="6"
                                         placeholder="Tell us how we can help you..." required></textarea>
-                                    <div class="invalid-feedback">
-                                        Please enter your message.
-                                    </div>
                                 </div>
 
                                 <div class="d-grid">
@@ -173,8 +164,8 @@
                                 <div class="contact-text">
                                     <h6 class="fw-bold mb-1">Phone Numbers</h6>
                                     <p class="mb-0 text-muted">
-                                        <a href="tel:+911234567890" class="contact-link">+91 1234567890</a><br>
-                                        <a href="tel:+910987654321" class="contact-link">+91 0987654321</a>
+                                        <a class="contact-link">+91 1234567890</a><br>
+                                        <a class="contact-link">+91 0987654321</a>
                                     </p>
                                 </div>
                             </div>
@@ -186,10 +177,8 @@
                                 <div class="contact-text">
                                     <h6 class="fw-bold mb-1">Email Addresses</h6>
                                     <p class="mb-0 text-muted">
-                                        <a href="mailto:info@nextstop.com"
-                                            class="contact-link">info@nextstop.com</a><br>
-                                        <a href="mailto:support@nextstop.com"
-                                            class="contact-link">support@nextstop.com</a>
+                                        <a class="contact-link">info@nextstop.com</a><br>
+                                        <a class="contact-link">support@nextstop.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -241,10 +230,10 @@
                             <i class="bi bi-chat-dots-fill quick-contact-icon"></i>
                             <h5 class="mt-3 mb-2">Need Immediate Assistance?</h5>
                             <p class="text-muted mb-3">Our support team is available 24/7 for urgent queries</p>
-                            <a href="tel:+911234567890" class="btn btn-custom-1 w-100 mb-2">
+                            <a class="btn btn-custom-1 w-100 mb-2">
                                 Call Now
                             </a>
-                            <a href="https://wa.me/911234567890" class="btn btn-outline-success w-100" target="_blank">
+                            <a class="btn btn-outline-success w-100" target="_blank">
                                 WhatsApp Us
                             </a>
                         </div>

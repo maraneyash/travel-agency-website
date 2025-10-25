@@ -160,27 +160,26 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="checkInDate" class="form-label">Check-in Date</label>
+                                            <label for="checkInDate" class="form-label"><i
+                                                    class="bi bi-calendar-event-fill me-2"
+                                                    aria-hidden="true"></i>Check-in Date</label>
                                             <input type="date" class="form-control booking-input" id="checkInDate"
                                                 required>
-                                            <div class="invalid-feedback">
-                                                Please select a check-in date.
-                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="checkOutDate" class="form-label">Check-out Date</label>
+                                            <label for="checkOutDate" class="form-label"><i
+                                                    class="bi bi-calendar2-check-fill me-2"
+                                                    aria-hidden="true"></i>Check-out Date</label>
                                             <input type="date" class="form-control booking-input" id="checkOutDate"
                                                 required>
-                                            <div class="invalid-feedback">
-                                                Please select a check-out date.
-                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="numAdults" class="form-label">Number of Adults</label>
+                                            <label for="numAdults" class="form-label"><i class="bi bi-people-fill me-2"
+                                                    aria-hidden="true"></i>Number of Adults</label>
                                             <select class="form-select booking-input" id="numAdults" required>
                                                 <option value="" selected disabled>Select number</option>
                                                 <option value="1">1 Adult</option>
@@ -189,13 +188,12 @@
                                                 <option value="4">4 Adults</option>
                                                 <option value="5">5+ Adults</option>
                                             </select>
-                                            <div class="invalid-feedback">
-                                                Please select number of adults.
-                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="numChildren" class="form-label">Number of Children (0-12
+                                            <label for="numChildren" class="form-label"><i
+                                                    class="bi bi-emoji-smile-fill me-2" aria-hidden="true"></i>Number of
+                                                Children (0-12
                                                 years)</label>
                                             <select class="form-select booking-input" id="numChildren">
                                                 <option value="0" selected>No Children</option>
@@ -208,7 +206,8 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="roomType" class="form-label">Room Preference</label>
+                                        <label for="roomType" class="form-label"><i class="bi bi-house-door-fill me-2"
+                                                aria-hidden="true"></i>Room Preference</label>
                                         <select class="form-select booking-input" id="roomType" required>
                                             <option value="" selected disabled>Select room type</option>
                                             <option value="single">Single Room</option>
@@ -216,9 +215,6 @@
                                             <option value="twin">Twin Sharing</option>
                                             <option value="suite">Suite</option>
                                         </select>
-                                        <div class="invalid-feedback">
-                                            Please select a room type.
-                                        </div>
                                     </div>
                                 </div>
 
@@ -230,70 +226,56 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="firstName" class="form-label">First Name *</label>
+                                            <label for="firstName" class="form-label"><i class="bi bi-person-fill me-2"
+                                                    aria-hidden="true"></i>First Name</label>
                                             <input type="text" class="form-control booking-input" id="firstName"
                                                 placeholder="Enter first name" required>
-                                            <div class="invalid-feedback">
-                                                Please enter your first name.
-                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <label for="lastName" class="form-label"><i class="bi bi-person-fill me-2"
+                                                    aria-hidden="true"></i>Last Name</label>
                                             <input type="text" class="form-control booking-input" id="lastName"
                                                 placeholder="Enter last name" required>
-                                            <div class="invalid-feedback">
-                                                Please enter your last name.
-                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="email" class="form-label">Email Address *</label>
+                                            <label for="email" class="form-label"><i class="bi bi-envelope-fill me-2"
+                                                    aria-hidden="true"></i>Email Address</label>
                                             <input type="email" class="form-control booking-input" id="email"
                                                 placeholder="example@email.com" required>
-                                            <div class="invalid-feedback">
-                                                Please enter a valid email address.
-                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <label for="phone" class="form-label"><i class="bi bi-telephone-fill me-2"
+                                                    aria-hidden="true"></i>Phone Number</label>
                                             <input type="tel" class="form-control booking-input" id="phone"
-                                                placeholder="+91 1234567890" pattern="[0-9+\-\s()]+" required>
-                                            <div class="invalid-feedback">
-                                                Please enter a valid phone number.
-                                            </div>
+                                                placeholder="+91 1234567890" required>
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="address" class="form-label">Address *</label>
+                                        <label for="address" class="form-label"><i class="bi bi-geo-alt-fill me-2"
+                                                aria-hidden="true"></i>Address</label>
                                         <textarea class="form-control booking-input" id="address" rows="3"
                                             placeholder="Enter your complete address" required></textarea>
-                                        <div class="invalid-feedback">
-                                            Please enter your address.
-                                        </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="city" class="form-label">City *</label>
+                                            <label for="city" class="form-label"><i class="bi bi-geo-alt-fill me-2"
+                                                    aria-hidden="true"></i>City</label>
                                             <input type="text" class="form-control booking-input" id="city"
                                                 placeholder="Enter city" required>
-                                            <div class="invalid-feedback">
-                                                Please enter your city.
-                                            </div>
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="pincode" class="form-label">Pin Code *</label>
+                                            <label for="pincode" class="form-label"><i class="bi bi-123 me-2"
+                                                    aria-hidden="true"></i>Pin Code</label>
                                             <input type="text" class="form-control booking-input" id="pincode"
-                                                placeholder="Enter pin code" pattern="[0-9]{6}" required>
-                                            <div class="invalid-feedback">
-                                                Please enter a valid 6-digit pin code.
-                                            </div>
+                                                placeholder="Enter pin code" required>
                                         </div>
                                     </div>
                                 </div>
@@ -305,7 +287,9 @@
                                     </h5>
 
                                     <div class="mb-3">
-                                        <label for="specialRequests" class="form-label">Any Special Requirements?
+                                        <label for="specialRequests" class="form-label"><i
+                                                class="bi bi-chat-left-text-fill me-2" aria-hidden="true"></i>Any
+                                            Special Requirements?
                                             (Optional)</label>
                                         <textarea class="form-control booking-input" id="specialRequests" rows="4"
                                             placeholder="e.g., dietary requirements, accessibility needs, special occasions..."></textarea>
@@ -345,9 +329,6 @@
                                             I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
                                             and <a href="#" class="terms-link">Cancellation Policy</a> *
                                         </label>
-                                        <div class="invalid-feedback">
-                                            You must agree before submitting.
-                                        </div>
                                     </div>
                                 </div>
 

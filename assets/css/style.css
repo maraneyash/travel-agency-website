@@ -66,15 +66,6 @@ img {
     border-color: #1a3740 !important;
 }
 
-.btn-social {
-    border: 2px solid #ddd;
-    background: #fff;
-    color: #666;
-    font-weight: 600;
-    padding: 12px;
-    transition: all 0.3s ease;
-}
-
 .btn-google:hover {
     background: #db4437;
     color: #fff;
@@ -606,7 +597,6 @@ img {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    text-decoration: none;
     transition: all 0.3s ease;
     border: 1px solid rgba(45, 84, 94, 0.2);
 }
@@ -614,41 +604,6 @@ img {
 .destination-tag:hover {
     background: #2d545e;
     color: #fff;
-}
-
-/* Responsive adjustments for modern hero */
-@media (max-width: 991px) {
-    .hero-main-title {
-        font-size: 3rem;
-    }
-
-    .hero-stats {
-        gap: 25px;
-    }
-
-    .hero-search-card {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-main-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-actions .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .hero-stats {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
 
 /* SECTIONS */
@@ -1298,11 +1253,6 @@ img {
     color: #fff;
 }
 
-.social-icon:hover {
-    transform: none;
-    box-shadow: none;
-}
-
 .social-icon.facebook {
     background: #3b5998;
 }
@@ -1342,46 +1292,6 @@ img {
 }
 
 /* DEALS */
-.hot-deals-banner {
-    background: linear-gradient(90deg, #fff3cd, #fff9e6);
-    border-bottom: 3px solid #ffc107;
-}
-
-.countdown-timer {
-    font-size: 1.2rem;
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.7;
-    }
-}
-
-.pulse-animation {
-    animation: pulseBtn 1.5s infinite;
-}
-
-@keyframes pulseBtn {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 .deal-of-day-card {
     background: #fff;
     border-radius: 15px;
@@ -1631,7 +1541,7 @@ img {
 
 .newsletter-icon {
     font-size: 4rem;
-    color: #e1b382;
+    color: #2d545e;
     margin-bottom: 20px;
 }
 
@@ -1694,53 +1604,6 @@ img {
     color: #2d545e;
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-.video-testimonial-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.video-testimonial-card:hover {
-    transform: none;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.video-placeholder {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.video-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: none !important;
-}
-
-.video-placeholder:hover .video-thumb {
-    transform: none;
-}
-
-.video-placeholder i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: #fff;
-    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-}
-
-.video-placeholder:hover i {
-    font-size: 6rem;
-    color: #e1b382;
 }
 
 /* FAQ */
@@ -1904,218 +1767,6 @@ img {
     font-size: 0.85rem;
     color: #666;
     margin-bottom: 10px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-    .hero-section,
-    .about-hero,
-    .destinations-hero,
-    .tours-hero,
-    .booking-hero,
-    .contact-hero,
-    .deals-hero,
-    .testimonials-hero {
-        padding: 100px 0 60px;
-    }
-
-    .hero-section h1,
-    .about-hero h1,
-    .destinations-hero h1,
-    .tours-hero h1,
-    .booking-hero h1,
-    .contact-hero h1,
-    .deals-hero h1,
-    .testimonials-hero h1 {
-        font-size: 2rem;
-    }
-
-    .navbar-custom .form-control {
-        width: 100% !important;
-        margin-bottom: 10px;
-    }
-
-    .carousel-item img {
-        height: 400px;
-    }
-
-    .carousel-caption-custom {
-        padding: 15px;
-    }
-
-    .carousel-caption-custom h1 {
-        font-size: 1.5rem;
-    }
-
-    .card .card-img-top,
-    .destination-card-img,
-    .tour-card-img,
-    .deal-card img {
-        height: 200px;
-    }
-
-    .section-header h2 {
-        font-size: 1.8rem;
-    }
-
-    .stats-number,
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .login-card-left,
-    .register-card-left,
-    .auth-card-left {
-        display: none;
-    }
-
-    .login-form-container,
-    .register-form-container,
-    .auth-form-container {
-        padding: 30px;
-    }
-
-    .gallery-item {
-        height: 200px;
-    }
-
-    .testimonial-carousel-card,
-    .testimonial-card {
-        padding: 30px 20px;
-    }
-
-    .testimonial-avatar {
-        width: 80px;
-        height: 80px;
-    }
-
-    .testimonial-text {
-        font-size: 1rem;
-    }
-
-    .footer-custom {
-        text-align: center;
-    }
-
-    .footer-custom h5 {
-        margin-top: 20px;
-    }
-
-    .booking-summary-card {
-        position: relative !important;
-        top: 0 !important;
-    }
-
-    .deal-day-content {
-        padding: 30px !important;
-    }
-
-    .pricing-section .new-price {
-        font-size: 2rem;
-    }
-
-    .deal-badge-mega {
-        top: 10px;
-        right: 10px;
-        padding: 10px 15px;
-    }
-
-    .discount-percent {
-        font-size: 1.5rem;
-    }
-
-    .discounted-price {
-        font-size: 1.4rem;
-    }
-
-    .weekend-deal-card {
-        height: 250px;
-    }
-
-    .group-discount-banner {
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .newsletter-form .form-control,
-    .newsletter-form .btn {
-        border-radius: 50px !important;
-        margin-bottom: 10px;
-    }
-
-    .feedback-card {
-        padding: 30px 20px;
-    }
-
-    .feedback-icon {
-        font-size: 3rem;
-    }
-
-    .video-placeholder {
-        height: 200px;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-section h1 {
-        font-size: 1.5rem;
-    }
-
-    .section-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .btn-custom,
-    .btn-custom-1,
-    .btn-primary-custom {
-        padding: 8px 20px !important;
-        font-size: 0.9rem;
-    }
-
-    .stats-number,
-    .stat-number {
-        font-size: 1.8rem;
-    }
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in {
-    animation: fadeIn 0.6s ease-out;
-}
-
-/* PRINT */
-@media print {
-
-    .navbar-custom,
-    .footer-custom,
-    .btn,
-    .carousel-control-prev,
-    .carousel-control-next,
-    .carousel-indicators {
-        display: none !important;
-    }
-
-    body {
-        font-size: 12pt;
-    }
-
-    .hero-section {
-        padding: 50px 0;
-        margin-top: 0;
-    }
 }
 
 /* TOURS PAGE SPECIFIC STYLES */
@@ -2324,7 +1975,7 @@ img {
 }
 
 .payment-form-label i {
-    color: #e1b382;
+    color: #2d545e;
 }
 
 .payment-input {
@@ -2337,7 +1988,6 @@ img {
 
 .payment-input:focus {
     border-color: #2d545e !important;
-    box-shadow: 0 0 0 0.2rem rgba(45, 84, 94, 0.1) !important;
 }
 
 .payment-input:hover {
