@@ -136,11 +136,10 @@ img {
     border: none;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: none;
     transition: none;
 }
 
-/* All cards should not move on hover - no shadow effects */
+/* All cards should not move on hover */
 .card:hover,
 .card.h-100.shadow-sm:hover,
 .destination-card:hover,
@@ -153,7 +152,6 @@ img {
 .mission-card:hover,
 .vision-card:hover {
     transform: none !important;
-    box-shadow: none !important;
 }
 
 /* Special offer cards styling */
@@ -941,7 +939,6 @@ img {
     border: none;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: none;
     margin-top: 50px;
     transition: none !important;
 }
@@ -950,7 +947,6 @@ img {
 .register-card:hover,
 .auth-card:hover {
     transform: none !important;
-    box-shadow: none !important;
 }
 
 .login-card-left,
@@ -2081,3 +2077,55 @@ img {
 }
 
 /* END */
+/* JS ENHANCEMENTS SUPPORT */
+/* Sticky navbar shadow when scrolled */
+.navbar-custom.scrolled {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #2d545e;
+    color: #fff;
+    border: none;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1050;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTop:hover {
+    background: #1a3740;
+}
+
+/* Reveal-on-scroll initial state (paired with .fade-in animation) */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        animation: none !important;
+    }
+
+    .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
